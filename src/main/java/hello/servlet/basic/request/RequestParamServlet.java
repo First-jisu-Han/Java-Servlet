@@ -25,8 +25,6 @@ public class RequestParamServlet extends HttpServlet {
                         "=" + request.getParameter(paramName)));
 
         System.out.println("[전체 파라미터 조회] - end");
-
-
         System.out.println("[단일 파라미터 조회]");
         String username=request.getParameter("username");
         String age=request.getParameter("age");
@@ -43,8 +41,6 @@ public class RequestParamServlet extends HttpServlet {
         }
 
         response.getWriter().write("ok"); // 화면에 응답 메세지로 ok 출력
-
-
 
     }
 }

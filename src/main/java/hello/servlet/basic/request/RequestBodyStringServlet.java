@@ -1,7 +1,7 @@
 package hello.servlet.basic.request;
 
-import org.springframework.util.StreamUtils;
 
+import org.springframework.util.StreamUtils;
 import javax.servlet.ServletException;
 import javax.servlet.ServletInputStream;
 import javax.servlet.annotation.WebServlet;
@@ -21,7 +21,7 @@ public class RequestBodyStringServlet extends HttpServlet {
 
         System.out.println("messageBody = " + messageBody);
 
-        response.getWriter().write("ok");
+        response.getWriter().write("Ok");
 
     }
 }
